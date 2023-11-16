@@ -11,9 +11,7 @@ char **tok_tok(char *str)
 	int i = 0, j = 0;
 
 	if (!str)
-	{
 		return (NULL);
-	};
 	str_cp = _strdup(str);
 	token = strtok(str_cp, " \t\n");
 	if (token == NULL)
@@ -28,7 +26,6 @@ char **tok_tok(char *str)
 		token = strtok(NULL, " \t\n");
 	}
 	free(str_cp), str_cp = NULL;
-
 	tokens = malloc(sizeof(char *) * (i + 1));
 	if (!tokens)
 	{
