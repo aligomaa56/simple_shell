@@ -46,8 +46,9 @@ void bltin_func(
 	}
 }
 /**
- * chDir - func to change dir
- * @arr_com: list of directories to go
+ * cd - func to change dir
+ * @com: list of directories to go
+ * @status: status code
  * Return: void
  */
 void cd(char **com, int *status)
